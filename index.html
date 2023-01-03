@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="with=device-width, initial-scale = 1.0">
+        <title>Saint Peter</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family= Nunito :wght@200;300;400;600;800&family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0bef0d9906.js" crossorigin="anonymous"></script>
+    <body>
+        <section class ="header">
+            <nav>
+                <a href="index.html"><img src= "images/logo.png"></a>
+                <div class = "nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick = hideMenu()></i>
+                    <ul>
+                        <li>
+                            <label for= "drop-1" class="toggle"></label>
+                            <a>  About Our Parish  </a>
+                            <input type="checkbox" id="drop-1">
+                            <ul>
+                                <li><a href="about.html">Our History</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="join.html">Become a Member</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="schedule.html">Worship Schedule</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="sacraments.html">Sacraments</a></li>
+                        <a href="onlinegive.html" class="main-button">GIVE</a>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick= showMenu() ></i>
+            </nav>
+
+            <div class = "text-box">
+                <h1><b>Saint Peter the Fishermen Parish</b></h1>
+                <p>And I tell you, you are Peter, and on this rock I will build my church, and the powers of death
+                    shall not prevail against it. <br><i>MT 16:18</i></p>
+                <a href="onlinegive.html" class="main-button">GIVE</a>
+            </div>
+
+        </section>
+
+
+
+
+        <! ------- mass schedule ---------- !>
+        <section class ="subtitle">
+            <h1><em>Mass Schedule</em></h1>
+            <p>Come Join Us in Worship!</p>
+        </section>
+        <section class="schedule">
+            <div class = "row">
+                <div class="schedule-col">
+                    <ol>
+                        <li>
+                            <h4>Saturday Vigil</h4>
+                            <p>4:00 PM</p>
+                        </li>
+                        <li>
+                            <h4>Sunday Mass</h4>
+                            <p>9:00 AM <br>11:00 AM</p>
+                        </li>
+                        <li>
+                            <h4>Tuesday, Wednesday, Thursday</h4>
+                            <p>8:00 AM</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <img src="images/motherAndSon.JPG">
+
+            </div>
+
+        </section>
+
+
+        <! ------- mission statement ---------- !>
+        <section class ="subtitle">
+            <section class = "quote">
+                <h1><em>Mission Statement</em></h1>
+                <h2>St. Peter the Fisherman parish is a family centered Catholic
+                    Church rooted in the Faith, Hope and Charity of the teachings
+                    of Jesus Christ. It is Eucharist Centered with an emphasis on
+                    gathering the faithful in the unity of the Sacraments and
+                    Catholic moral teaching, welcoming to all unified in the
+                    Holy Spirit.</h2>
+            </section>
+        </section>
+
+
+
+    <! ------ Contact  --------- >
+    <section class = "contact-port">
+        <h1>Tell us about yourself!</h1>
+        <p>If you have questions, ask us! We'd love to hear from you.</p>
+        <a href="contact.html" class="main-button">CONTACT US</a>
+    </section>
+
+
+    <! ------ footer --------- >
+    <section class = "footer">
+        <h3>Saint Peter the Fishermen Parish</h3>
+        <p>33 Trinity Circle, Lake Harmony, PA 18624
+        </p>
+        <a href="" class="main-button">GIVE</a>
+        <p>coded by hope de jesus <i class="fa-regular fa-face-smile"></i></p>
+    </section>
+
+    </body>
+
+
+    <! ---------------JavaScript for Hamburger Toggle Menu ----------------------- !>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</html>
+
+
+
