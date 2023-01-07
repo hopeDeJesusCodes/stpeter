@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="with=device-width, initial-scale = 1.0">
+    <title>Sacraments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family= Nunito :wght@200;300;400;600;800&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0bef0d9906.js" crossorigin="anonymous"></script>
+<body>
+<section class ="sub-header-prep">
+    <nav>
+        <a href="index.html"><img src= "images/logo.png"></a>
+        <div class = "nav-links" id="navLinks">
+            <i class="fa fa-times" onclick = hideMenu()></i>
+            <ul>
+                <li>
+                    <label for= "drop-1" class="toggle"></label>
+                    <a>  About Our Parish  </a>
+                    <input type="checkbox" id="drop-1">
+                    <ul>
+                        <li><a href="about.html">Our History</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="join.html">Become a Member</a></li>
+                    </ul>
+                </li>
+                <li><a href="schedule.html">Worship Schedule</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="sacraments.html">Sacraments</a></li>
+                <li><a href="prep.html">PREP Program</a></li>
+                <a href="https://www.osvhub.com/stpeterthefisherman/giving/funds" class="main-button">GIVE</a>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick= showMenu() ></i>
+    </nav>
+    <h1><b>PREP Program</b></h1>
+</section>
+
+
+<! -----------  content ---------->
+<section class="about-paragraph">
+    <div class = "row">
+        <div class="paragraph-col">
+            <h1>PREP</h1>
+            <h3>Insert Subheader Here</h3>
+            <p>Info to come later. Please return another time for more information,
+            </p>
+            <a href="contact.html" class="secondary-button">Contact</a>
+        </div>
+        <div class="paragraph-col">
+            <img src="images/quote.jpg">
+        </div>
+    </div>
+
+</section>
+
+
+<! ------ footer --------- >
+<section class = "footer">
+    <h3>Saint Peter the Fisherman Church</h3>
+    <p>33 Trinity Circle Road, Lake Harmony, PA 18624
+    </p>
+    <a href="https://www.osvhub.com/stpeterthefisherman/giving/funds" class="main-button">GIVE</a>
+    <p>coded by hope de jesus <i class="fa-regular fa-face-smile"></i></p>
+</section>
+
+</body>
+
+
+</body>
+</html>
+
+
+
+<! ---------------JavaScript for Hamburger Toggle Menu ----------------------- !>
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
